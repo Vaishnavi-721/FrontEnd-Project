@@ -1,0 +1,233 @@
+*{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    /* ye extra  padding include nahi kregi jo margin and padding hai usi me adjust kregi */
+    box-sizing: border-box; 
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} */
+
+ul li{
+    display: inline-block;
+    padding: 0 2rem;
+     
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: rgb(160, 91, 91);
+}
+
+  
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 5%;
+}
+
+.btn{
+    border: none;
+    padding: 5px 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(122, 106, 106);
+}
+
+.fa-bars{
+  border: 1px solid black;
+  font-size:  1rem;
+  border-radius: 5px;
+  padding: 5px 5px;
+  display: none;
+
+}
+
+ 
+
+ .home{
+    display: flex;
+    align-items: center;
+    background-image: url('Resources/img9.jpeg');
+    max-height: 600px;
+     
+
+ }
+
+ .info{
+    max-width: 49%;
+    padding: 10rem 9%;
+ }
+
+ h2{
+    font-size: 2rem;
+    padding: 2rem 0;
+    color: wheat;
+ }
+
+
+
+ .desc{
+    padding-bottom: 260px;
+    color:  rgb(97, 179, 97);
+ }
+
+ .tablebook{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 1rem 1rem;
+    font-size: 23px;
+    font-weight: 700;
+    background-color: lightseagreen;
+    border-radius: 10px;
+ }
+
+ .tablebook:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+ }
+
+ .pic{
+     max-width: 49%;
+     
+ }
+
+ .pic img{
+       border-radius: 60px;
+       width: 93%;
+      
+ }
+
+#about h2,h1{
+    color: black;
+   text-align: center;
+}
+
+#about{
+    min-height: 400px;
+    padding: 2rem 0;
+}
+
+
+ 
+.about{
+     display: flex;
+}
+
+.aboutimg{
+    width: 49%;
+    padding: 0 1rem;
+}
+
+.aboutdesc{
+    width: 49%;
+    padding: 0 2rem;
+}
+
+.aboutdesc p{
+    padding: 2rem 0;
+    text-align: justify;
+}
+
+footer h1{
+    color: wheat;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+footer{
+    background-color: rgb(19, 16, 16);
+    color: bisque;
+}
+
+.footcontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myicons i{
+    display: block;
+    padding: 1rem 1rem;
+}
+
+.myaddress{
+    width: 50%;
+
+}
+
+.right{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .fa-bars{
+        display: block;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .home{
+        display: block;
+    }
+
+    .info{
+       padding-top: 50px; 
+       max-width: 100%;
+    }
+    .pic{
+        display: none;
+    }
+    .about{
+        display: block;
+    }
+
+    .aboutimg{
+        text-align: center;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .aboutdesc{
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .aboutdesc p{
+        width: fit-content;
+        padding: 0 0;
+        text-align: justify;
+        padding: 0 1rem;
+    }
+     
+}
+
